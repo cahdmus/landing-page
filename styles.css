@@ -1,52 +1,14 @@
+/* General styling */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Helvetica, Arial, sans-serif;
-    /* border: 2px solid red; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    /* border: 2px solid rgb(189, 117, 117); */
 }
 
 a {
     text-decoration: none;
-}
-
-nav, header, footer {
-    background-color: #1F2937;
-    color: #F9FAF8;
-    width: 100%;
-    display: flex;
-    height: fit-content;
-}
-
-nav, footer {
-    padding: 30px 250px;
-}
-
-nav h1 {
-    font-size: 24px;
-}
-
-nav a, header p {
-    font-size: 18px;
-    color: #E5E7EB;
-}
-
-nav a {
-    margin: 0px 20px;
-    text-align: left;
-}
-
-nav a, nav h1 {
-    flex: 1;
-}
-
-header {
-    padding: 140px 250px;
-}
-
-header h1 {
-    font-size: 48px;
-    font-weight: bolder;
 }
 
 button {
@@ -55,32 +17,83 @@ button {
     text-align: center;
     text-decoration: none;
     border-radius: 10px;
-    padding: 10px 30px;
-    margin: 10px 0px;
+    padding: 10px 45px;
     font-weight: bold;
     font-size: 18px;
     color: white;
 }
 
-header p {
-    margin: 5px 0px;
+
+/* Navigation, header and footer styling */
+nav, header, footer {
+    background-color: #1F2937;
+    color: #F9FAF8;
+    width: 100%;
+    padding: 1.5% 18%;
 }
 
-header img {
-    flex: 1;
-    padding-left: 50px;
-    object-fit: cover;
-    height: 200px;
+nav, header {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+/* nav a {
+    padding: 5%;
+} */
+
+nav a, header p {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+footer {
+    text-align: center;
+    color: #E5E7EB;
+    letter-spacing: 0.1em;
+}
+
+/* Navigation */
+nav h1 {
+    font-size: 24px;
+}
+
+/* Header */
+header {
+    padding: 6% 18% 9% 18%;
+}
+
+header h1 {
+    font-size: 48px;
+    font-weight: bolder;
 }
 
 .headerDesc {
-    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-main h1{
+header img {
+    width: 90%;
+    margin-left: 5%;
+    object-fit: cover;
+}
+
+
+/* First Section of Main - square pictures */
+.white {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.white h1{
     font-size: 36px;
     font-weight: bolder;
     color: #1F2937;
+    text-align: center;
+    margin-top: 2%;
 }
 
 .info {
@@ -89,32 +102,65 @@ main h1{
 }
 
 .infoImg {
-    flex: 1;
+    width: 9%;
+    margin: 3% 1.5% 6% 1.5%;
 }
 
 .infoImg img {
-    height: 150px;
-    width: 150px;
+    width: 100%;
     border: 5px solid #3882F6;;
     border-radius: 20px;
 }
 
-.white {
-    padding: 50px;
+.infoImg p {
+    text-align: center;
+    color: #67686b;
 }
 
+
+/* Second Section of Main - quote with grey background */
 .grey {
     background-color: #E5E7EB;
     color: #1F2937;
-    padding: 150px 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8%;
+}
+
+.grey .quote, .grey .reference {
+    width: 65%;
 }
 
 .grey .quote {
     font-size: 36px;
     font-style: italic;
+    font-weight: lighter;
 }
 
 .grey .reference {
     font-size: 28px;
     font-weight: bold;
+    text-align: right;
+}
+
+
+/* Third Section of Main - call to action blue box */
+.blue {
+    background-color: #3882F6;
+    width: 65%;
+    margin: 6% auto;
+    padding: 3% 2%;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+.blue button {
+    border: 3px solid white;
+}
+
+.blue p {
+    color: #E5E7EB;
 }
