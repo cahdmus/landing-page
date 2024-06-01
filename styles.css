@@ -21,6 +21,7 @@ button {
     font-weight: bold;
     font-size: 18px;
     color: white;
+    width: 30%;
 }
 
 
@@ -35,12 +36,16 @@ nav, header, footer {
 nav, header {
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
 }
 
-/* nav a {
-    padding: 5%;
-} */
+nav .links {
+    flex-grow: 1;
+    text-align: right;
+}
+
+nav a {
+    margin-left: 2%;
+}
 
 nav a, header p {
     font-size: 18px;
